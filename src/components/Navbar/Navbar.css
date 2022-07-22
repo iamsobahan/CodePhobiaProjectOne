@@ -3,8 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-black);
+  background: transparent;
   padding: 0.5rem 2rem;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0 auto;
 }
 
 .app__navbar-logo {

@@ -8,14 +8,6 @@
   align-items: center;
 }
 
-.app__bg {
-  background: url('./assets/bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
 .app__wrapper {
   display: flex;
   justify-content: space-between;
@@ -54,17 +46,17 @@
 
 .custom__button {
   background-color: var(--color-crimson);
-    color: var(--color-black);
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .p__cormorant {
@@ -151,7 +143,7 @@
   .section__padding {
     padding: 4rem 2rem;
   }
-  
+
   .p__cormorant {
     font-size: 21px;
   }
@@ -174,4 +166,164 @@
     font-size: 45px;
     line-height: 70px;
   }
+}
+
+.banner1,
+.banner2 {
+  position: relative;
+}
+
+.banner1 img,
+.banner2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* #814d15 */
+  /* #955C0F */
+}
+.overlayMain {
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  right: 0px;
+  text-align: end;
+  padding: 15px 0px;
+  background: black;
+  padding-right: 15px;
+
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 0px 1px 3px 0px var(--color-golden);
+}
+
+.promotion {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.reservation {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.reservation a,
+.promotion a {
+  background: #be0104;
+  color: white;
+  padding: 8px 8px 8px 8px;
+  font-family: var(--font-base);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.promotion a {
+  background: #814d15;
+  font-weight: 600;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.overlayMain2 {
+  bottom: 40%;
+}
+
+.overlayMain h1 {
+  font-family: var(--font-base);
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.overlayMain h1::after {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 200px;
+  height: 1px;
+
+  background: var(--color-golden);
+  content: '';
+}
+
+.overlayMain p {
+  font-family: var(--font-base);
+  font-weight: 500;
+  width: 400px;
+}
+
+.overlayMain h2 {
+  padding: 10px 0;
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.knife {
+  width: 4px !important;
+  transform: rotate(270deg);
+}
+
+.icon {
+  color: var(--color-golden);
+  font-size: 25px;
+  margin-right: 5px;
+}
+.largeScreen {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  z-index: 9999;
+}
+
+.largeScreen .largeScreenIcon {
+  color: var(--color-grey);
+  font-size: 25px;
+  background: transparent;
+  animation: screen 2s infinite;
+}
+
+@keyframes screen {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.slick-dots {
+  bottom: 50% !important;
+  z-index: 9999;
+  transform: translateY(-50%);
+}
+
+.slick-dots li {
+  display: block !important;
+  margin: 8px 0px 8px 15px !important;
+}
+
+.slick-dots li button::before {
+  font-size: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-golden) !important;
+  line-height: 10px;
+  opacity: 1 !important;
+}
+
+.slick-dots .slick-active button::before {
+  background: var(--color-golden);
 }

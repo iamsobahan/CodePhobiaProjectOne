@@ -1,31 +1,12 @@
 import React from 'react';
-
-import {
-  AboutUs,
-  Chef,
-  FindUs,
-  Footer,
-  Gallery,
-  Header,
-  Intro,
-  Laurels,
-  SpecialMenu,
-} from './container';
-import { Navbar } from './components';
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
+import Banner from './container/Banner/Banner';
 
 const App = () => (
   <div>
     <Navbar />
-    {/* <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs />
-    <Footer /> */}
+    <Banner></Banner>
   </div>
 );
 

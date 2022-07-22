@@ -34,7 +34,7 @@ const Navbar = () => {
         </a>
         <div />
         <a href="/" className="p__opensans">
-          Reservation
+          Catering Service
         </a>
       </div>
       <div className="app__navbar-smallscreen">
@@ -77,7 +77,7 @@ const Navbar = () => {
                 <a href="/">Contact Us</a>
               </li>
               <li className="p__opensans p__opensans-reservation">
-                <a href="/">Reservation</a>
+                <a href="/">Catering Service</a>
               </li>
             </ul>
           </div>
